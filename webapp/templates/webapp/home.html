@@ -1,0 +1,14 @@
+{% extends "webapp/header.html" %}
+{% block content %}
+{% load staticfiles %}
+<form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Upload and submit" class="btn" />
+</form>
+{% if upload %}
+<h1> mail sent </h1>
+<h1> pay money for scatter plots</h1>
+<img src="{% static 'webapp/img/result.png' %}" class="responsive-img"  alt="face" >
+{% endif %}
+{% endblock %}

@@ -1,0 +1,5 @@
+"modelName"  "accuracy"
+"decisionTree"  48.67
+"randomForest"  83.52
+"linearModel"  35.94
+"neuralNetwork"  37.45
